@@ -17,7 +17,7 @@ const sections = [{ title: comienzo + ' صــوتـ' + fin, rows: listAudio },
 
 const listMessage = {
 text: teskd,
-footer: 'Elija su Busqueda para poder Descargar\n' + wm,
+footer: 'اختر بحثك لتتمكن من التنزيل\n' + wm,
 title: `${htki} *نتيجة* ${htka}`,
 buttonText: "🔎 بـحــث",
 sections}

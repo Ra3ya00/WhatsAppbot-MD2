@@ -13,7 +13,7 @@ handler.all = async function (m) {
                               'اسكتتتتت ترا اضربك عيب وش هل كلام   ', 
                                     'طيب و بعدين ' 
     ];
-  } else if (/^السلام عليكم|السلام|سلام عليكم|مرحبا$/i.test(m.text)) {
+  } else if (/^مرحبا|السلام عليكم|سلام عليكم$/i.test(m.text)) {
     responses = [
       'وعليكم السلام', 
          'وعليكم السلام حبي متور.', 
@@ -70,7 +70,15 @@ handler.all = async function (m) {
                 'لا يا مين انت لاتسكتني', 
                   'اسكت انت'
     ];
-   } 
+   } else if (/^يونا|يوي|يوناع$/i.test(m.text)) {
+    responses = [
+      'ايش؟ ', 
+         'شو بدك؟  ', 
+             'مش وقتك  ', 
+                 ' ها؟ ', 
+                  'ايش فيه؟ '
+    ];
+  }
   if (responses) {
     let randomIndex = Math.floor(Math.random() * responses.length);
     conn.reply(m.chat, responses[randomIndex], m);
