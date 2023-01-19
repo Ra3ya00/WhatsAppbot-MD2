@@ -1,4 +1,4 @@
-let media = './media/menus/Menuvid3.mp4'
+/*let media = './media/menus/Menuvid3.mp4'
 let handler = async (m, { conn, command }) => {
 let str = `
 💕 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝙊(𝘼) 𝘼 𝙇𝙊𝙎 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
@@ -43,3 +43,4 @@ handler.command = /^linkgc|grupos|gruposgatabot|gatabotgrupos|gruposdegatabot|gr
 handler.exp = 33
 
 export default handler
+*/

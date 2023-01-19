@@ -3,7 +3,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let a = []
 let b = text.split('|')
 
-if (!b[0]) return conn.reply(m.chat, `${mg} استخدم الأمر على النحو التالي\n*${usedPrefix + command} Survey Reason|text1|text2|text3....*`, fkontak, m) 
+if (!b[0]) return conn.reply(m.chat, `${mg} استخدم الأمر على النحو التالي\n*${usedPrefix + command} سبب الاستطلاع|النص1|النص2|النص3....*`, fkontak, m) 
 if (!b[1]) return conn.reply(m.chat, `${mg} لإنشاء خيارات في استخدام الاستطلاع *" | "*\n*${usedPrefix + command} Survey Reason|text1|text2|text3....*`, fkontak, m)
 if (b[13]) return conn.reply(m.chat, `${fg} الحد الاقصي *12* خيارات!!\n\nاستخدم الأمر على النحو التالي\n*${usedPrefix + command} Survey Reason|text1|text2|text3....*`, fkontak, m)
 

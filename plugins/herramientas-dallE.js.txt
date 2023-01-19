@@ -1,0 +1,13 @@
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+if (!text) throw `*[❗] أدخل نصًا لإنشاء صورة لاستخدام وظيفة DALL-E*\n\n*❏ مثال على الطلبات*\n*❏ ${usedPrefix + command} gatitos llorando*\n*❏ ${usedPrefix + command} gata besos*`
+try {
+m.reply('*[❗] انتظر لحظة عندما أرسل ما أطلبه*')
+let tiores = await conn.getFile(`https://api.lolhuman.xyz/api/dall-e?apikey=${lolkeysapi}&text=${text}`)
+await conn.sendFile(m.chat, tiores.data, null, null, m)
+} catch {
+throw `*[❗] خطأ، حاول مرة أخرى*`
+}
+}
+handler.command = ['dall-e', 'dalle', 'ia2', 'cimg', 'openai2']
+handler.level = 1
+export default handler

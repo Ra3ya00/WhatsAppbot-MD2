@@ -117,14 +117,14 @@ const fkontak = {
 let selected = text.toLowerCase().split(" ")[0] + " "
 if(selected == "ترميز ") {
 let str = text.replace(selected, "").toLowerCase()
-let Output_Morse = ""
+let Output_مورس = ""
 for(let i of str) {
-if(!enc[i]) Output_Morse += i
+if(!enc[i]) Output_مورس += i
 for(let j in enc) {
-if(j == i) Output_Morse += enc[i] + " "
+if(j == i) Output_مورس += enc[i] + " "
 }}
 
-return conn.reply(m.chat, Output_Morse, fkontak, m)
+return conn.reply(m.chat, Output_مورس, fkontak, m)
 } else if(selected == "فك ") { 
 let str = text.replace(selected, "").replace(/[.]/g, "•")
 let Output_String = ""
@@ -138,9 +138,9 @@ return conn.reply(m.chat, Output_String, fkontak, m)
 return conn.reply(m.chat, `${mg}🔣 فك التشفير\n\nلترميز استخدم \nمثال:\n*${usedPrefix}${command} ترميز Hello yuna \nاستخدام الفقرة فك *: لفك التشفير \nمثال:\n*${usedPrefix}${command} فك •• / •-•• --- •••- • / -•-- --- ••- `, fkontak, m)
 }}
 
-handler.help = ["morse"].map(v => v + " <encode|decode>")
+handler.help = ["مورس"].map(v => v + " <encode|decode>")
 handler.tags = ["tools"]
 
-handler.command = /^(morse|مورس)/i
+handler.command = /^(مورس|مورس)/i
 
 export default handler

@@ -1,7 +1,7 @@
 import axios from 'axios'
 let split = '|'
 let handler = async (m, { conn, args: [effect], text: txt, usedPrefix, command, name }) => {
-if (!effect) throw `${mg} في حال قلت نصا مفقودا ، استخدم هذه الطريقة\nفي حالة ظهور النص مفقود ، استخدم مثل هذا\n💫 *${usedPrefix + command} efecto texto1|texto2*\n | مثل\n💫 *${usedPrefix + command} Wolf-Logo-Galaxy yuna|kuma*\n\n*✨ 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙇𝙊𝙂𝙊𝙎*\n\n🤍 ${usedPrefix + command} ` + effects.map(v => v.title).join(`\n💜 ${usedPrefix + command} `)
+if (!effect) throw `${mg} في حال قلت نصا مفقودا ، استخدم هذه الطريقة\nفي حالة ظهور النص مفقود ، استخدم مثل هذا\n💫 *${usedPrefix + command} شعار نص1|نص2*\n | مثل\n💫 *${usedPrefix + command} Wolf-Logo-Galaxy yuna|kuma*\n\n*✨ قائمة الشعارات*\n\n🤍 ${usedPrefix + command} ` + effects.map(v => v.title).join(`\n💜 ${usedPrefix + command} `)
 effect = effect.toLowerCase()
 if (!effects.find(v => (new RegExp(v.title, 'gi')).test(effect))) throw `${mg} الشعار ${effect} إنه ليس في قائمة الشعارات`
 let text = txt.replace(new RegExp(effect, 'gi'), '').trimStart()
@@ -12,7 +12,7 @@ if (typeof res == 'number') throw res == -1 ? `${mg} الشعار ${effect} إن
 let result = await axios.get(res, {
 responseType: 'arraybuffer'
 })
-await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *AQUÍ ESTA TÚ LOGO!!*\n✅ *HERE IS YOUR LOGO!!*\n\n🔆 *EFECTO: ${effect}*\n${wm}`, m)
+await conn.sendFile(m.chat, result.data, 'Error.jpg', `✅ *ها هو شعارك!!*!!*\n\n🔆 *شعار :: ${effect}*\n${wm}`, m)
 }
 handler.help = ['logos']
 handler.tags = ['nulis']

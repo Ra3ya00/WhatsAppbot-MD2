@@ -5,14 +5,14 @@ let isClose = { // Switch Case Like :v
 'close': 'announcement',
 'abierto': 'not_announcement',
 'cerrado': 'announcement',
-'abrir': 'not_announcement',
-'cerrar': 'announcement',
+'فتح': 'not_announcement',
+'اغلاق': 'announcement',
 }[(args[0] || '')]
 if (isClose === undefined)
 throw `
 ${lenguajeGB['smsAvisoMG']()}*╭━[ ${wm} ]━⬣*
-*┃➥ ${usedPrefix + command} abrir*
-*┃➥ ${usedPrefix + command} cerrar*
+*┃➥ ${usedPrefix + command} فتح*
+*┃➥ ${usedPrefix + command} اغلاق*
 *╰━━━━━[ 𓃠 ${vs} ]━━━━━⬣*
 `.trim()
 await conn.groupSettingUpdate(m.chat, isClose)
@@ -26,7 +26,7 @@ if (isClose === 'announcement'){
 conn.sendButton(m.chat, `${lenguajeGB['smsAvisoEG']()}يمكن للمسؤولين فقط الكتابة في هذه المجموعة!!`, `قروب مسكر\n${wm}`, pp, [['لحظة المشرف 😎', '.s'], [' | قائمة الأوامر☘️', `/menu`]], m)
 }  
  }
-handler.help = ['group open / close', 'grupo abrir / cerrar']
+handler.help = ['group open / close', 'grupo فتح / اغلاق']
 handler.tags = ['group']
 handler.command = /^(group|قروب)$/i
 handler.admin = true

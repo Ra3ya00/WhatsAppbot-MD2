@@ -84,14 +84,13 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 ∘ _${usedPrefix}calc *الرياضيات*_
 ∘ _${usedPrefix}del *الرد على رسالة بوت*_
 ∘ _${usedPrefix}qrcode *نص*_
-∘ _${usedPrefix}readmore *texto1|texto2*_
-∘ _${usedPrefix}spamwa *numero|texto|cantidad*_
+∘ _${usedPrefix}readmore *نص1|نص2*_
+∘ _${usedPrefix} سبام  *رقم|نص|عدد*_
 ∘ _${usedPrefix}styletext *texto*_
-∘ _${usedPrefix}traducir *texto*_
+∘ _${usedPrefix} ترجم  *نص*_
 ∘ _${usedPrefix}morse codificar *texto*_
 ∘ _${usedPrefix}morse decodificar *morse*_
 ∘ _${usedPrefix}encuesta | poll *Motivo*_
-∘ _${usedPrefix}horario_
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 

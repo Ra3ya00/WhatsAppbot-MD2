@@ -6,7 +6,7 @@ comment: text,
 username: conn.getName(m.sender)
 }), 'error.png', '🌀 *ها هي الصورة المنقطة !!*\n | YUNA BOT ', m)
 }
-handler.help = ['pixel','difuminar']
+handler.help = ['pixel','difuminar', '' ]
 handler.tags = ['maker']
 handler.command = /^(pixel|pixelar|difuminar)$/i
 export default handler
