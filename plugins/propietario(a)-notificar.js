@@ -1,4 +1,4 @@
-import fs from 'fs' 
+/*import fs from 'fs' 
 const linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
 const grupo = nna
 
@@ -19,9 +19,10 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)
 
 } else {
-await m.reply('```USTED NO TIENE AUTORIZACIÓN PARA USAR ESTE COMANDO.```')}
+await m.reply('```أنت غير مصرح لك باستخدام هذا الأمر.```')}
 }
 handler.command = ['mensajeoficial']
 handler.owner = true
 
 export default handler
+*/

@@ -96,7 +96,7 @@ let user = global.db.data.users[m.sender]
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `Bien hecho! ${conn.getName(m.sender)} Nivel: ${user.level}`
+        let teks = `أحسنت! ${conn.getName(m.sender)} مستوى: ${user.level}`
         let str = `
 ╭━━━[ *مستوىდ* ]━━━━⬣
 ┃დ *المستوى السابق:* *${before}*
@@ -106,7 +106,7 @@ let user = global.db.data.users[m.sender]
 ┃დ *رتبة* ${user.role}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃დ *تاريخ:* *${new Date().toLocaleString('id-ID')}*
-╰━━━〔 *𓃠${vs}* 〕━━━━━⬣
+╰━━━〔 *${vs}* 〕━━━━━⬣
 
 *_كل ما تفاعلت يذيد مستواك اكثر_*
 *_قم بتحديث نطاقك باستخدام الأمر ${usedPrefix}rol!!_*
