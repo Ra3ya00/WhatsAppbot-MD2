@@ -13,7 +13,7 @@ conn.sendFile(m.chat, i.url, 'igstory.mp4', wm, m)
 conn.sendFile(m.chat, i.url, '', '', m)
 }}});
   
-let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+let info = ` *تعرف على الجديد وتذكر أن يكون لديك أحدث إصدار.*
   `.trim()  
 await conn.sendHydrated(m.chat, info, wm, null, ig, 'انستغرام', null, null, [
 [' قائمة التحميل🌀', '#descargasmenu'],
@@ -23,7 +23,7 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, 'انستغرام', null, nu
 }
 handler.help = ['igstory <username>']
 handler.tags = ['downloader']
-handler.command = ['igstory', 'ighistoria', 'ighistorias' ]
+handler.command = ['igstory', 'ستوري', 'ighistorias' ]
 handler.limit = 3
 handler.exp = 87
 export default handler

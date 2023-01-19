@@ -37,15 +37,14 @@ throw `${lenguajeGB['smsAvisoFG']()} لم يتم العثور على اسم مس
 let info = `💖 *تعرف على الجديد وتذكر أن يكون لديك أحدث إصدار.*
   `.trim()
   
-await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
-['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
-['𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✨', '.allmenu'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+await conn.sendHydrated(m.chat, info, wm, null, ig, 'انستغرام', null, null, [
+['جمي الاوامر✨', '.allmenu'],
+['الأوامر☘️', '/menu']
 ], m,)  
 
 }
 handler.help = ['tiktokstalk'].map(v => v + ' <username>')
 handler.tags = ['stalk']
-handler.command = /^(tiktokstalk|ttstalk)$/i
+handler.command = /^(tiku|ttstalk)$/i
 handler.exp = 48
 export default handler

@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*[❗] Ejemplo de uso del comando ${usedPrefix + command}* https://getstickerpack.com/stickers/flork-memes-4-1`
+if (!text) throw `*[❗] مثال على استخدام الأمر ${usedPrefix + command}* https://getstickerpack.com/stickers/flork-memes-4-1`
 try {
 let url = text
 let res = await fetch(`https://api.akuari.my.id/downloader/stickerpack?link=${url}`)

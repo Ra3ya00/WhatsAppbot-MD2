@@ -1,4 +1,4 @@
-let toM = (a) => '@' + a.split('@')[0]
+/*let toM = (a) => '@' + a.split('@')[0]
 
 function handler(m, { groupMetadata }) {
   if (m.command === 'ugly' || m.command === 'formarparejas' || m.command === 'الاغبا') {
@@ -36,3 +36,4 @@ handler.help = ['ugly', 'الاغبا', 'اجمل']
 handler.tags = ['main', 'fun']
 handler.command = ['ugly', 'formarparejas', 'الاغبا', 'اجمل']
 handler.group = true
+*/

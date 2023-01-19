@@ -26,7 +26,7 @@ await conn.sendFile(m.chat, results, 'instagram.mp4', `✨ *الرابط:*\n${ar
 
 handler.help = ['instagram <link ig>']
 handler.tags = ['downloader']
-handler.command =/^(instagram|ig(dl)?)$/i
+handler.command =/^(instagram|انستا|ig(dl)?)$/i
 handler.limit = 2
 handler.exp = 70
 handler.register = true

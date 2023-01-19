@@ -70,22 +70,20 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `📍 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-
-⠇ ${lenguajeGB['smsTex8']()} 🛰️
-∘ _${usedPrefix}toimg | img | jpg *يقوم بتحويل ملصق إلى صوره*_
-∘ _${usedPrefix}tomp3 | mp3 *فيديو الملاحظة الصوتية*_
-∘ _${usedPrefix}tovn | vn *فيديو وصوت*_
-∘ _${usedPrefix}tourl *فيديو, صورة*_
-∘ _${usedPrefix}toenlace  *فيديو أو صورة أو صوت*_
-∘ _${usedPrefix}tts ar *نص*_
+let menuB = `*تزكر قبل كل أمر يجب أن تستخدم ${usedPrefix}*
+*┇⊛* ${lenguajeGB['smsTex8']()} 🛰️
+*┇⊛هذا الأمر يقوم بتحويل فيديو او صوت إلى ملاحظة صوتيه*
+*┇اكتب vn او mp3*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر يقوم بتحويل صوره او فيديو إلى رابط*
+*┇اكتب رابط او tul*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر يقوم بتحويل ملصق إلى صورة*
+*┇اكتب : toimg او صوره او jpg*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر يقوم بقراءة ما كتبت*
+*┇اكتب : انطق او tts*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 

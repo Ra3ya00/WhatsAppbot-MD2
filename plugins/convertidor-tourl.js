@@ -7,9 +7,9 @@ if (!mime) throw `${lenguajeGB['smsAvisoMG']()}\nالرد على فيديو أو
 let media = await q.download()
 let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
 let link = await (isTele ? uploadImage : uploadFile)(media)
-m.reply(`*ENLACE ${link}*`)
+m.reply(`*تم ${link}*`)
 }
 handler.help = ['tourl <reply image>']
 handler.tags = ['sticker']
-handler.command = /^(upload|tourl|toenlace)$/i
+handler.command = /^(upload|tul|tourl|رابط|toenlace)$/i
 export default handler

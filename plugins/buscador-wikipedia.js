@@ -25,7 +25,7 @@ status: link.status,
 Pesan: eror}
 return notFond}}
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}\nاكتب الكلمة الأساسية للبحث\nمثال\n*${usedPrefix + command} قمر* `
+if (!text) throw `${lenguajeGB['smsAvisoMG']()}\nاكتب الكلمة الأساسية للبحث\nمثال\n*${usedPrefix + command} moon* `
 wikipedia(`${text}`).then(res => {
 let info = ` | لقد وجدت هذا :\n\n` + res.result.isi
 conn.sendHydrated(m.chat, info, wm, null, ig, 'انستغرام', null, null, [

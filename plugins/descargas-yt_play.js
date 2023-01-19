@@ -116,7 +116,7 @@ await conn.sendButton(m.chat, wm, `*𓆩༺════ •⊰${vs}⊱• ══
 const sections = [{
 title: comienzo + ' 📡 اختر نوع تحميل' + fin,
 rows: [
-{title: "صوت (1)", rowId: `${usedPrefix}yta ${url}`, description: `${title}\n`},
+{title: "صوت (1)", rowId: `${usedPrefix}py ${url}`, description: `${title}\n`},
 {title: "صوت (2)", rowId: `${usedPrefix}play.1 ${url}`, description: `${title}\n`},
 {title: "صوت (ملف) ", rowId: `${usedPrefix}pdocaudio ${url}`, description: `${title}\n`},
 {title: "فيديو ( 1)", rowId: `${usedPrefix}ytv ${url}`, description: `${title}\n`},

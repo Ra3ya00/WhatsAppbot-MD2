@@ -1,6 +1,6 @@
 import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
 import fetch from 'node-fetch'
-let handler = async (m, { conn, args }) => {
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 if (!args[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()} أدخل رابط اليوتيوب لتنزيل الفيديو\nمثل\n*${usedPrefix + command} https://youtu.be/c5gJRzCi0f0*`, fkontak, m)
 await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} يتم تنزيل الفيديو الخاص بك ، انتظر لحظة من فضلك `, fkontak, m)
@@ -31,7 +31,7 @@ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `╭━❰  ${wm}
 ┃ 🤍  | عنوان
 ┃ ${n}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
+┃ 🧡  | حجم
 ┃ ${n3}
 ╰━━━━━❰ *𓃠 ${vs}* ❱━━━━⬣`, thumbnail: await fetch(n4) }, { quoted: m })
 } catch {

@@ -19,6 +19,6 @@ await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()} خطأ أثناء محا
 }}
 handler.help = ['tiktok']
 handler.tags = ['dl']
-handler.command = /^(tt|tiktok)(dl|nowm)?$/i
+handler.command = /^(tt|تيك|tiktok)(dl|nowm)?$/i
 handler.limit = 2
 export default handler

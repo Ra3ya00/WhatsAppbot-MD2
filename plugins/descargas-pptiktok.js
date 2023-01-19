@@ -4,7 +4,7 @@ if (!text) throw `${lenguajeGB['smsAvisoMG']()} اكتب اسم مستخدم TIK
 let res = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=9b817532fadff8fc7cb86862`
 await conn.sendFile(m.chat, res, 'error.jpg', `✅  | صورة الملف الشخصي\n💟 *${text}*`, m, false)
   
-  let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+  let info = `*تعرف على الجديد وتذكر أن يكون لديك أحدث إصدار.*
   `.trim()
   
 conn.sendHydrated(m.chat, info, wm, null, md, 'YUNA-MD', null, null, [
@@ -16,7 +16,7 @@ conn.sendHydrated(m.chat, info, wm, null, md, 'YUNA-MD', null, null, [
 }
 handler.help = ['tiktokfoto'].map(v => v + ' <username>')
 handler.tags = ['downloader']
-handler.command = /^(tiktokfoto|tiktokphoto)$/i
+handler.command = /^(tikfo|تيكو|tiktokphoto)$/i
 handler.limit = 1
 handler.exp = 68
 export default handler

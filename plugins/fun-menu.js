@@ -70,28 +70,36 @@ let fsizedoc = '1'.repeat(10)
 let adReply = { fileLength: fsizedoc, seconds: fsizedoc, contextInfo: { forwardingScore: fsizedoc, externalAdReply: { showAdAttribution: true, title: wm, body: '👋 ' + username, mediaUrl: ig, description: 'Hola', previewType: 'PHOTO', thumbnail: await(await fetch(gataMenu.getRandom())).buffer(), sourceUrl: redesMenu.getRandom() }}}
 
 let menuA = `🎠 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-
-⠇ ${lenguajeGB['smsTex10']()} 🎡
-∘ _${usedPrefix}ttt *غرفة*_
-∘ _${usedPrefix} مسح_
-∘ _${usedPrefix}ذكاء *nombre : @tag*_
-∘ _${usedPrefix}غباء *nombre : @tag*_
-∘ _${usedPrefix}حب *nombre : @tag*_
-∘ _${usedPrefix}جميل *nombre : @tag*_
-∘ _${usedPrefix}doxxeame_
-∘ _${usedPrefix}slot *كم*_
-∘ _${usedPrefix}الاغبا
-∘ _${usedPrefix}دادو_
-∘ _${usedPrefix}تك_
-∘ _${usedPrefix}لو_
-∘ _${usedPrefix}xo_
+let menuB = ` *تزكر قبل كل أمر يجب أن تستخدم ${usedPrefix}*
+*┇⊛* ${lenguajeGB['smsTex10']()} 🎡
+*┇⊛هذا الأمر ينشأ لعبه X/O*
+*┇اكتب : ttt او xo*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر ينشأ لعبه حجر ورق مقص*
+*┇اكتب : pvp*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر يمسح غرفه XO*
+*┇اكتب : اكتب #مسح / del*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر يعطيك نسبة ذكاء /غباء/حب/جمال الشخص*
+*┇اكتب : ذكاء @منشن*
+*┇اكتب : غباء @منشن*
+*┇اكتب : حب @منشن*
+*┇اكتب : جمال @منشن*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر عباره عن لعبه حظ او تخصر او تفوز يتم استخدام XP*
+*┇اكتب : حظ او slot*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر برسل ملصق نرد يدور بشكل عشوائي*
+*┇اكتب : دادو*
+*┇⊰ا᯽ا⊱┈──╌❊╌──┈⊰ا᯽ا⊱*
+*┇⊛هذا الأمر برسل أسأله عشوائيه*
+*┇اكتب : تك*
+*┇⊛هذا الأمر يرسل اسأله لو خيروك*
+*┇اكتب : لو*
+*┇⊛هذا الأمر يرسل اسأله انمي عشوائي*
+*┇اكتب : كت*
+*┇⊰ا᯽ا⊱┈───❊╌──┈⊰ا᯽ا⊱*
 `.trim()
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
