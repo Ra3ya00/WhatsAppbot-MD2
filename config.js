@@ -9,8 +9,7 @@ import { en, es, id, ar, pt } from './lib/idiomas/total-idiomas.js'
 global.owner = [
   [' 393271166550 ', 'MAYO 👑 ', true],
   ['201002771022', 'YUNA 💖', true],
-//  ['213784391714', '𝐿 - 99👤', true],
-  ['+20 100 277 1022']]
+  ['+393271166550 ']]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 global.mods = [] 
@@ -99,13 +98,16 @@ global.author = 'YUNA-MD'
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
 global.vs = '1.4.5'
-global.version = vs
+global.vsJB = '2.0'
 
 global.gt = 'YUNA BOT'
 global.gatabot = gt
 
 global.yt = 'https://youtube.com/'
 global.youtube = yt
+
+global.yt2 = 'https://www.youtube.com/'
+global.youtube2 = yt2
 
 global.ig = 'https://www.instagram.com/a_e_b_2003'
 global.gatadiosig = ig
@@ -117,7 +119,7 @@ global.nna = 'https://chat.whatsapp.com/IxeB9yBYrNp85CLmKykmMM'
 global.nnagrupo = nna //UPDATE YUNA BOT 
 global.nna2 = 'IxeB9yBYrNp85CLmKykmMM'
 
-global.nn = 'https://chat.whatsapp.com/FUR29ZJtsAiFE9gRyQv7E6'
+global.nn = 'https://chat.whatsapp.com/DP8EGDUOzPM071V5SUaiNG'
 global.nngrupo = nn //Grupo 1
 
 global.nnn = 'https://chat.whatsapp.com/FUR29ZJtsAiFE9gRyQv7E6'
@@ -132,7 +134,6 @@ global.nnnttgrupo = nnntt //Grupo 4
 global.nnnttt = 'https://chat.whatsapp.com/FUR29ZJtsAiFE9gRyQv7E6'
 global.nnntttgrupo = nnnttt //Grupo 5
 global.paypal = 'https://paypal.me/yunabot'
-global.donar = paypal
 
 global.asistencia = 'Wa.me/393271166550' //
 
@@ -214,7 +215,7 @@ global.img12 = 'https://i.imgur.com/615mJ2s.jpeg'
 global.img13 = 'https://i.imgur.com/Hff1jGB.jpeg'
 global.img14 = 'https://i.imgur.com/zFhpTZ4.jpeg'
 global.img15 = 'https://i.imgur.com/QlxuxAS.jpeg'
-
+global.welgata = [ig, yt2, yt2, ig, md, ig, yt, paypal, yt2, yt2, ig]
 global.redesMenu = [nna, nn, nnn, nnnt, nnntt, nnnttt, md, ig, paypal, yt]
 global.gataMenu = [img, img2, img6, img7, img8, img9, img13, img14, img15]
 global.gataVidMenu = ['./media/menus/Menuvid1.mp4', './media/menus/Menuvid2.mp4', './media/menus/Menuvid3.mp4']

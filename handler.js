@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
-
+import fetch from 'node-fetch'
 /**
  * @type {import('@adiwajshing/baileys')}  
  */
@@ -958,20 +958,20 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
-		if (!('temporal' in settings)) settings.temporal = true
-        if (!('antiPrivate' in settings)) settings.antiPrivate = false
-		if (!('antiCall' in settings)) settings.antiCall = true
-                
-		if (!('antiSpam' in settings)) settings.antiSpam = true
-            } else global.db.data.settings[this.user.jid] = {
+		        if (!('temporal' in settings)) settings.temporal = true
+                if (!('antiPrivate' in settings)) settings.antiPrivate = false
+		        if (!('antiCall' in settings)) settings.antiCall = true
+		        if (!('antiSpam' in settings)) settings.antiSpam = true
+		        if (!('jadibotmd' in settings)) settings.jadibotmd = true
+                    } else global.db.data.settings[this.user.jid] = {
                 self: false,
                 autoread: false,
                 restrict: false,
 		temporal: true,
 		antiPrivate: false,
 		antiCall: true,
-                
 		antiSpam: true
+		jadibotmd: true,
             }
         } catch (e) {
             console.error(e)
@@ -1343,11 +1343,9 @@ export async function participantsUpdate({ id, participants, action }) {
                     } catch (e) {
                     } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || lenguajeGB.smsCont12()) :
-                            (chat.sBye || this.bye || conn.bye || 'وداعًا, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
+                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-this.sendButton(id, wm, text, apii.data, [[(action == 'add' ? lenguajeGB.smsCont13() : lenguajeGB.smsCont14()), (action == 'add' ? '.s' : '.s')], ['💖 القائمة |', `.menu`]], null, {mentions: this.parseMention(text)})
-//this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/', '-𝙈𝘿', null, null, [
-//[(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'], ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']], '', { mentions: [user]})
+this.sendButton(id, wm, text, apii.data, [[(action == 'add' ? lenguajeGB.smsCont13() : lenguajeGB.smsCont14()), (action == 'add' ? '.s' : '.s')], ['💖 تسجيل ', `.verify`]], null, {mentions: this.parseMention(text)})
 }}}
 		   
 break
